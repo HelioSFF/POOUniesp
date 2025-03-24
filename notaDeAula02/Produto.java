@@ -63,38 +63,12 @@ public class Produto {
         this.qtd = qtd;
     }
 
-    public void venda(int option){
-        switch (option){
-            case 1:
-                System.out.println("Pagamento com Pix");
-                double valorVenda = this.valor * this.qtdvenda;
-                double valorFinal = valorVenda - (valorVenda - valorVenda*0.05);
-                System.out.println(STR."Valor total da compra : \{valorFinal} R$");
+    public void venda(int qtd) {
+        int qtdv = this.qtd - qtd;
+        double venda = qtdv * this.valor;
+        System.out.println("Valor da venda");
 
-            case 2:
-                System.out.println("Pagamento em Espécie");
-                valorVenda = this.valor * this.qtdvenda;
-                valorFinal = valorVenda - (valorVenda - valorVenda*0.05);
-                System.out.println(STR."Valor total da compra : \{valorFinal} R$");
-
-            case 3:
-                System.out.println("Transferência bancaria ");
-                valorVenda = this.valor * this.qtdvenda;
-                valorFinal = valorVenda - (valorVenda - valorVenda*0.05);
-                System.out.println(STR."Valor total da compra : \{valorFinal} R$");
-
-
-            case 4:
-                System.out.println("Pagamento no Débito");
-                valorVenda = this.valor * this.qtdvenda;
-                valorFinal = valorVenda - (valorVenda - valorVenda*0.05);
-                System.out.println(STR."Valor total da compra : \{valorFinal} R$");
-
-            case 5:
-                System.out.println("Pagamento no Crédito");
-                valorVenda = this.valor * this.qtdvenda;
-                System.out.println(STR."Valor total da compra : \{valorVenda} R$");
-        }
+    }
     }
 
     public void consultarEstoque(){
