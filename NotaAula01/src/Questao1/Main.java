@@ -6,6 +6,10 @@ public class Main {
         Scanner input = new Scanner(System.in);
         Aluno student = new Aluno();
         System.out.println("Bem vindo ao progrma para calcular media!");
+
+        System.out.println("Comece digitando seu nome: ");
+        student.setNome(input.next());
+        
         System.out.println("Digite sua primeira nota: ");
         student.setNota1(input.nextDouble());
 
@@ -15,6 +19,8 @@ public class Main {
         System.out.println("Digite sua terceira nota: ");
         student.setNota3(input.nextDouble());
 
+        
+        System.out.println("Aluno : "+student.getNome());
         student.media();
 
     }
