@@ -1,7 +1,17 @@
 package Questao1;
 
 public class Aluno {
+    private String nome;
     private double nota1, nota2, nota3;
+
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
 
     public void setNota1(double nota1) {
         this.nota1 = nota1;
