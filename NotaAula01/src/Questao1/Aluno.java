@@ -41,10 +41,10 @@ public class Aluno {
         double mediaari = (nota1 + nota2 + nota3)/3;
         System.out.println("Media = " + mediaari);
 
-        if(mediaari >= 7) {
+        if(mediaari >= 70) {
             System.out.println("Aprovado!");
 
-        } else if(mediaari >= 4){
+        } else if(mediaari >= 40){
             System.out.println("Prova final.");
         } else{
             System.out.println("Reprovado!");
